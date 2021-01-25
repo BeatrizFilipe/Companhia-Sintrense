@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html>
+	<head>
+
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="autor" content="Companhia Sintrense">
+		<meta name="description" content="Companhia Sintrense">
+		
+		<!-- CSS -->
+		<link rel="stylesheet" type="text/css" href="css/reset.css">
+		<link rel="stylesheet" type="text/css" href="css/navbar.css">
+		<link rel="stylesheet" type="text/css" href="css/estilos-desktop.css">
+		<link rel="stylesheet" type="text/css" href="css/estilos-tablet.css"> 
+		<link rel="stylesheet" type="text/css" href="css/estilos-mobile.css">
+		
+
+		<!-- Java Script --> <!-- HAMBURGER MENU -->
+
+		<script
+		src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+		integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8="
+		crossorigin="anonymous"></script>
+		<script>
+		$(function() {
+		$(".toggle").on("click", function() {
+			if ($(".page").hasClass("active")) {
+				$(".page").removeClass("active");
+			} else {
+				$(".page").addClass("active");
+			}
+		});
+	});
+		</script>
+
+		<script>
+			$(function() {
+			$(".toggle").on("click", function() {
+				if ($(".bars").hasClass("active")) {
+					$(".bars").removeClass("active");
+				} else {
+					$(".bars").addClass("active");
+				}
+			});
+		});
+		</script>
+
+		
+		<!-- Fonts -->
+		<style>
+			@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+		</style>
+
+
+		<!-- Page title -->
+		<title>Companhia Sintrense®</title>
+
+
+		<!-- Favicon -->
+		<link rel="icon" type="imagens/png" href="IMG/favicon.png">
+		
+        
+        <!-- Background Image -->
+        <style>
+            body {
+              background-image: url('IMG/background.jpg');
+            }
+         </style>
+    </head>
+    
+
+	<body>        
+		<main>
+
+		<!-- navbar -->
+
+			<nav>
+				<a href="index.html"><img src="IMG/logo.jpg" alt="Companhia Sintrense Logo" class="logo"></a>
+				<ul class="menu">
+					<li><a href="soluções.html" class="page">Soluções</a></li>
+					<li><a href="serviços.html" class="page">Serviços</a></li>
+					<li><a href="produtos.html" class="page">Produtos</a></li>
+					<li><a href="empresa.html" class="page">Empresa</a></li>
+					<li class="search page">
+						<input type="text" placeholder="Search...">
+						<img src="IMG/lupa.svg" alt="Search" class="lupa">
+					</li>
+					<li class="toggle"><span class="bars"></span></li>
+				</ul>
+			</nav>
+
+
+		<!-- header -->
+			
+			<section id="bem-vindo">
+				<div class="header">
+					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 564.11 84.67"><defs><style>.cls-1{font-size:59.52px;}.cls-1,.cls-3{font-family:TimesNewRomanPSMT, Times New Roman;}.cls-3{font-size:36px;}</style></defs><g id="Layer_2" data-name="Layer 2"><g id="Layer_1-2" data-name="Layer 1"><text class="cls-1" transform="translate(25.81 49.46)">Companhia Sintrense</text><rect class="cls-2" x="40.91" y="69.82" width="32.31" height="14.85" rx="7.43"/><rect class="cls-2" y="69.82" width="32.31" height="14.85" rx="7.43"/><rect class="cls-2" x="81.82" y="69.82" width="32.31" height="14.85" rx="7.43"/><rect class="cls-2" x="122.72" y="69.82" width="32.31" height="14.85" rx="7.43"/><rect class="cls-2" x="163.63" y="69.82" width="32.31" height="14.85" rx="7.43"/><rect class="cls-2" x="204.54" y="69.82" width="32.31" height="14.85" rx="7.43"/><rect class="cls-2" x="245.45" y="69.82" width="32.31" height="14.85" rx="7.43"/><rect class="cls-2" x="286.36" y="69.82" width="32.31" height="14.85" rx="7.43"/><rect class="cls-2" x="327.27" y="69.82" width="32.31" height="14.85" rx="7.43"/><rect class="cls-2" x="368.17" y="69.82" width="32.31" height="14.85" rx="7.43"/><rect class="cls-2" x="409.08" y="69.82" width="32.31" height="14.85" rx="7.43"/><rect class="cls-2" x="449.99" y="69.82" width="32.31" height="14.85" rx="7.43"/><rect class="cls-2" x="490.9" y="69.82" width="32.31" height="14.85" rx="7.43"/><rect class="cls-2" x="531.81" y="69.82" width="32.31" height="14.85" rx="7.43"/><text class="cls-3" transform="translate(540.85 30.69) scale(0.58)">®</text></g></g></svg>
+				</div>
+			</section>
+		
+		</main>
+    
+        
+
+			<!-- Down Button -->
+
+		<a href="#informações" class="down-button">
+			<svg xmlns="http://www.w3.org/2000/svg" width="61.54" height="25.71" viewBox="0 0 75.624 37.749">
+				<path id="Caminho_2" data-name="Caminho 2" d="M863.9,1015.384l30.769,25.706,30.769-25.706" transform="translate(-856.862 -1008.341)" fill="none" stroke="#597eab" stroke-linecap="round" stroke-linejoin="round" stroke-width="10"/>
+			</svg>
+		</a>
+
+
+
+			<!-- Scroll Up Button -->
+
+		<button onclick="topFunction()" id="myBtn" class="myBtn"><img src="IMG/Grupo_27.svg" alt="Scroll Up"></button>
+
+		<script>
+			const myBtn = document.querySelector("#myBtn");
+
+			window.addEventListener("scroll", () => {
+				if (window.pageYOffset < 300) {
+					myBtn.classList.add("active");
+				} 
+				else {
+					myBtn.classList.remove("active");
+				}
+			})
+
+			myBtn.addEventListener("click", function (){
+				window.scrollTo(0, 0);
+			});
+
+		</script>
+
+
+			<!-- INFORMAÇÃO -->
+
+		<section id="informações">
+			<h2 class="info-titulo"> Informação </h2>
+			<article>
+				<p class="info-texto">
+					Já começaram a ser entregues os primeiros apartamentos do 
+					empreendimento Espaços Design, na Urbanização do Infantado - Loures.
+				</p>
+				<p class="info-texto">
+					Com um especial cuidado no design e qualidade, com a sua localização 
+					privilegiada a 5 minutos de Lisboa e junto ao Loures Shopping, poderá 
+					encontrar mais informações em <a href="https://www.espacos-design.com" target="blank">www.espacos-design.com</a>.
+				</p>
+				<p class="info-texto">
+					Promovido pelo Grupo Gameiro Investimentos, este empreendimento teve 
+					as suas instalações eléctricas, telecomunicações e de segurança executadas 
+					pela Companhia Sintrense.
+				</p>
+
+				<div class="csi-assinatura">
+					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 564.11 84.67"><defs><style>.cls-1{font-size:59.52px;}.cls-1,.cls-3{font-family:TimesNewRomanPSMT, Times New Roman;}.cls-3{font-size:36px;}</style></defs><g id="Layer_2" data-name="Layer 2"><g id="Layer_1-2" data-name="Layer 1"><text class="cls-1" transform="translate(25.81 49.46)">Companhia Sintrense</text><rect class="cls-2" x="40.91" y="69.82" width="32.31" height="14.85" rx="7.43"/><rect class="cls-2" y="69.82" width="32.31" height="14.85" rx="7.43"/><rect class="cls-2" x="81.82" y="69.82" width="32.31" height="14.85" rx="7.43"/><rect class="cls-2" x="122.72" y="69.82" width="32.31" height="14.85" rx="7.43"/><rect class="cls-2" x="163.63" y="69.82" width="32.31" height="14.85" rx="7.43"/><rect class="cls-2" x="204.54" y="69.82" width="32.31" height="14.85" rx="7.43"/><rect class="cls-2" x="245.45" y="69.82" width="32.31" height="14.85" rx="7.43"/><rect class="cls-2" x="286.36" y="69.82" width="32.31" height="14.85" rx="7.43"/><rect class="cls-2" x="327.27" y="69.82" width="32.31" height="14.85" rx="7.43"/><rect class="cls-2" x="368.17" y="69.82" width="32.31" height="14.85" rx="7.43"/><rect class="cls-2" x="409.08" y="69.82" width="32.31" height="14.85" rx="7.43"/><rect class="cls-2" x="449.99" y="69.82" width="32.31" height="14.85" rx="7.43"/><rect class="cls-2" x="490.9" y="69.82" width="32.31" height="14.85" rx="7.43"/><rect class="cls-2" x="531.81" y="69.82" width="32.31" height="14.85" rx="7.43"/><text class="cls-3" transform="translate(540.85 30.69) scale(0.58)">®</text></g></g></svg>
+					<p class="assinatura-data">Sintra, 18 de Dezembro de 2008</p>
+				</div>
+			</article>		
+		</section>
+                
+
+				
+
+			<!-- grelha -->
+		<section id="grelha">
+			<ul>
+				<li class="box">
+					<h2>Soluções</h2>
+					<p>A Companhia Sintrense oferece aos seus clientes uma variedade de soluções no campo das instalações técnicas,
+							adaptando-as ás suas necessidades com uma especial atenção á qualidade, funcionalidade e disponibilidade. </p>
+
+					<p class="segundo-p">Estas soluções resultam do agrupamento de <a href="produtos.html">produtos</a> e <a href="serviços.html">serviços</a> Companhia Sintrense, 
+						resultando em sistemas integrados e potenciando o desempenho, ergonomia e estética, com uma reconhecida 
+						vantagem económica em fase de projecto, implementação e exploração.</p>
+					
+					<a href="soluções.html" class="seta_secções"><img src="IMG/seta_secções.svg" alt="Ir para página 'soluções'"></a>
+				</li>
+				<li class="box">
+					<h2>Especial Condomínios</h2>
+					<p>Conheça as propostas da Companhia Sintrense para condomínios e instalações colectivas. 
+						Desde soluções de renovação das instalações colectivas a contratos de manutenção, 
+						disponibilizamos várias opções para condomínios assim como para empresas de administração
+							de condomínios e proprietários de edifícios. </p>
+							
+					<a href="especial-condominios.html" class="seta_secções"><img src="IMG/seta_secções.svg" alt="Ir para página 'Especial Condomínios'"></a>
+				</li>
+				<li class="box">
+					<h2>As suas instalações elétricas são seguras?</h2>
+					<p>É do conhecimento de todos os riscos para pessoas e equipamentos gerados por instalações
+						eléctricas defeituosas. Conheça as nossas propostas para a análise da segurança das instalações 
+						eléctricas, individuais e colectivas.</p>
+						
+					<a href="as-suas-instalaçoes-eletricas-sao-seguras.html" class="seta_secções"><img src="IMG/seta_secções.svg" alt="Ir para página 'As suas instalações elétricas são seguras?''"></a>
+				</li>
+			</ul>
+		</section>
+
+			
+	
+		<footer>
+
+			<div class="inner_footer">
+				<div class="recrut">
+					<h2>Recrutamento</h2>
+					<a href="mailto:geral@companhiasintrense.pt" title="Contact me by mail">Envie-nos o seu C.V.</a>
+				</div>
+
+				<div class="links">
+					<h2>Links</h2>
+					<ul>
+						<li><a href="mapa-site.html">Mapa do Site</a></li>
+						<li><a href="soluções.html">Soluções</a></li>
+						<li><a href="produtos.html">Produtos</a></li>
+						<li><a href="empresa.html">Sobre Nós</a></li>
+						<li><a href="contactos.html">Contactos</a></li>
+					</ul>
+				</div>
+
+				<div id="contactos" class="contactos">
+					<ul>
+						<li >
+							<p>R. Humberto Delgado, 26 - G.7 <br>
+								Abrunheira <br>
+								2710-050 Sintra <br>
+								PORTUGAL
+								</p>
+						</li>
+					
+						<li>
+							<a href="tel:+351219156203" title="Contact me by phone">Tel.: +351 219 156 203</a>
+						</li>
+						
+						<li>
+							<a href="tel:+351219156129" title="Contact me by phone">Fax: +351 219 156 129</a>
+						</li>
+
+						<li>
+							<a href="mailto:geral@companhiasintrense.pt" title="Contact me by mail">geral@companhiasintrense.pt</a>
+						</li>
+					</ul>
+				</div>
+				
+			</div>
+
+			<p class="copy"> © 2008 Companhia Sintrense de Instalações, Lda <a href="http://www.companhiasintrense.pt/empresa/termosecondicoes.html" target="blank">Termos e Condições</a> </p>
+
+		</footer>
+
+	</body>
+</html>

@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html>
+	<head>
+
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="autor" content="Companhia Sintrense">
+		<meta name="description" content="Companhia Sintrense">
+		
+		<!-- CSS -->
+		<link rel="stylesheet" type="text/css" href="css/reset.css">
+		<link rel="stylesheet" type="text/css" href="css/navbar.css">
+		<link rel="stylesheet" type="text/css" href="css/estilos-desktop.css">
+		<link rel="stylesheet" type="text/css" href="css/estilos-tablet.css"> 
+        <link rel="stylesheet" type="text/css" href="css/estilos-mobile.css">
+        <link rel="stylesheet" type="text/css" href="css/sub-page.css"> <!-- SUB PAGE STYLES -->
+		
+
+		<!-- Java Script -->
+
+		<script
+		src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+		integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8="
+		crossorigin="anonymous"></script>
+		<script>
+		$(function() {
+		$(".toggle").on("click", function() {
+			if ($(".page").hasClass("active")) {
+				$(".page").removeClass("active");
+			} else {
+				$(".page").addClass("active");
+			}
+		});
+	});
+		</script>
+
+		
+		<!-- Fonts -->
+		<style>
+			@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+		</style>
+
+
+		<!-- Page title -->
+		<title>Companhia Sintrense® :: Manutenção</title>
+
+
+		<!-- Favicon -->
+		<link rel="icon" type="imagens/png" href="IMG/favicon.png">
+		
+        
+        <!-- Background Image -->
+        <style>
+            body {
+              background-image: url('IMG/background.jpg');
+            }
+         </style>
+    </head>
+    
+
+	<body>        
+
+        <main>
+
+                <!-- navbar -->
+    
+            <nav>
+                <a href="index.html"><img src="IMG/logo.jpg" alt="Companhia Sintrense Logo" class="logo"></a>
+                <ul class="menu">
+                    <li><a href="soluções.html" class="page">Soluções</a></li>
+                    <li><a href="serviços.html" class="page">Serviços</a></li>
+                    <li><a href="produtos.html" class="page">Produtos</a></li>
+                    <li><a href="empresa.html" class="page">Empresa</a></li>
+                    <li class="search page">
+                        <input type="text" placeholder="Search...">
+                        <img src="IMG/lupa.svg" alt="Search" class="lupa">
+                    </li>
+                    <li class="toggle"><span class="bars"></span></li>
+                </ul>
+            </nav>
+
+                <!--Title-->
+
+            <div class="title">
+                <h2>Manutenção</h2>
+            </div>
+        </main>
+
+
+        <!--Scroll UP-->
+
+		<button onclick="topFunction()" id="myBtn" class="myBtn"><img src="IMG/Grupo_27.svg" alt="Scroll Up"></button>
+
+		<script>
+			const myBtn = document.querySelector("#myBtn");
+
+			window.addEventListener("scroll", () => {
+				if (window.pageYOffset < 300) {
+					myBtn.classList.add("active");
+				} 
+				else {
+					myBtn.classList.remove("active");
+				}
+			})
+
+			myBtn.addEventListener("click", function (){
+				window.scrollTo(0, 0);
+			});
+
+		</script>
+
+
+        <!-- Conteudo -->
+
+        <section class="intro intro-man">
+            <p>
+                Com recurso a equipamentos de teste e ensaio de ultima geração, contando com uma equipa de formação avançada, 
+                a Companhia Sintrense disponibiliza serviços de manutenção em instalações eléctricas, telecomunicações, dados e segurança.
+            </p>
+
+           <p>
+                Estes serviços estão disponíveis por contrato a prazo ou de forma pontual. Poderá consultar <a href="manutençao-prev.html">aqui</a> as opções disponíveis.
+           </p>
+            
+            <p>
+                Actuando em várias vertentes, os serviços de manutenção disponibilizados dividem-se em:
+            </p>
+            <ul>
+                <li><a href="#programada">Manutenção Programada;</a></li>
+                <li><a href="#preditiva">Manutenção Preditiva;</a></li>
+                <li><a href="#correctiva">Manutenção Correctiva;</a></li>
+                <li><a href="#paliativa">Manutenção Paliativa;</a></li>
+                <li><a href="#man-proj">Manutenção de Projecto.</a></li>
+            </ul>
+            <p>
+                Estes serviços estão disponíveis para variados tipos de instalações, nomeadamente instalações residenciais, comerciais e de serviços.
+            </p>
+            <p>
+                No futuro próximo contamos disponibilizar os serviços de manutenção também para instalações industriais, instalações eléctricas de média tensão e postos de transformação.
+            </p>
+            <h3>
+                Os diversos tipos de manutenção:
+            </h3>
+            <hr id="programada">
+
+            
+        </section>
+
+        <section class="grelha-ser" >
+            <ul>
+                <li>
+                    <h2>Manutenção Programada</h2>
+                    <p>A manutenção programada é executada, conforme o nome indica, em datas pré determinadas, sendo estas ajustadas de acordo com diversos factores, tais como a importância das instalações, propensão a avarias e regulamentação aplicável.</p>
+                    <p> Durante estas intervenções são substituídos equipamentos/componentes de duração limitada (definida pelo fabricante ou pela legislação),sendo ainda feito uma avaliação do estado das instalações, identificando-se possíveis pontos de ruptura actual ou iminente.</p>
+                    <hr id="preditiva">
+                </li>
+
+                <li>
+                    <h2>Manutenção Preditiva</h2>
+                    <p> Incluída, normalmente, na manutenção programada, a manutenção preditiva consiste na avaliação das instalações com o objectivo de identificação de possíveis pontos de ruptura iminente, assim como avaliação de erros de projecto e/ou construção.</p>
+                    <p>Este tipo de manutenção é sempre feito no inicio dos contratos de manutenção para instalações que não tenham sido executadas pela Companhia Sintrense ou no caso de instalações que não tenham sido objecto de manutenção durante um longo período de tempo.</p>
+                    <hr id="correctiva">
+                </li>
+
+                <li>
+                    <h2>Manutenção Correctiva</h2>
+                    <p>A manutenção correctiva é executada após a ocorrência de avarias, sendo repostas as características originais das instalações, ou melhoradas as suas características, caso seja possível.</p>
+                    <p>Este tipo de manutenção é feito após solicitação do cliente, por comunicação de avaria através dos canais disponibilizados.</p>
+                    <hr id="paliativa">
+                </li>
+
+                <li>
+                    <h2>Manutenção Paliativa</h2>
+                    <p>A manutenção paliativa é idêntica á manutenção correctiva, variando no objectivo imediato. Também esta manutenção é executada após a ocorrência de avarias, sendo neste caso o objectivo imediato a reposição em funcionamento das instalações ou equipamentos, ficando a resolução final da avaria adiada para um futuro em que o funcionamento das instalações/equipamentos não seja já tão critico (por exemplo, no final do horário de laboração ou fim-de-semana).</p>
+                    <p>Também este tipo de manutenção é feito após solicitação do cliente, por comunicação de avaria através dos canais disponibilizados.</p>
+                    <hr id="man-proj">
+                </li>
+                
+                <li>
+                    <h2>Manutenção de Projecto</h2>
+                    <p>A manutenção de projecto, também designada de melhoria, é executada após a manutenção preditiva, tendo como objectivo a melhoria das instalações ou equipamentos, executando-se alterações de modo a aumentar a sua fiabilidade, disponibilidade (com o objectivo de redução de avarias futuras) ou diminuição dos custos de funcionamento ou operação.</p>
+                </li>
+            </ul>
+        </section>
+
+        <section class="intro">
+            <p>Para obtenção de informações mais pormenorizadas sobre o serviço de manutenção da Companhia Sintrense, <a href="manutençao-prev.html">poderá consultar aqui</a> as opções disponíveis ou utilizar o nosso formulário de <a href="contactos.html">contacto</a> para colocação de questões mais concretas.</p>
+        </section>
+
+
+
+        <!-- FOOTER -->
+
+        <footer>
+
+			<div class="inner_footer">
+				<div class="recrut">
+					<h2>Recrutamento</h2>
+					<a href="mailto:geral@companhiasintrense.pt" title="Contact me by mail">Envie-nos o seu C.V.</a>
+				</div>
+
+				<div class="links">
+					<h2>Links</h2>
+					<ul>
+						<li><a href="mapa-site.html">Mapa do Site</a></li>
+						<li><a href="soluções.html">Soluções</a></li>
+						<li><a href="produtos.html">Produtos</a></li>
+						<li><a href="empresa.html">Sobre Nós</a></li>
+						<li><a href="contactos.html">Contactos</a></li>
+					</ul>
+				</div>
+
+				<div id="contactos" class="contactos">
+					<ul>
+						<li >
+							<p>R. Humberto Delgado, 26 - G.7 <br>
+								Abrunheira <br>
+								2710-050 Sintra <br>
+								PORTUGAL
+								</p>
+						</li>
+					
+						<li>
+							<a href="tel:+351219156203" title="Contact me by phone">Tel.: +351 219 156 203</a>
+						</li>
+						
+						<li>
+							<a href="tel:+351219156129" title="Contact me by phone">Fax: +351 219 156 129</a>
+						</li>
+
+						<li>
+							<a href="mailto:geral@companhiasintrense.pt" title="Contact me by mail">geral@companhiasintrense.pt</a>
+						</li>
+					</ul>
+				</div>
+				
+			</div>
+
+			<p class="copy"> © 2008 Companhia Sintrense de Instalações, Lda <a href="http://www.companhiasintrense.pt/empresa/termosecondicoes.html" target="blank">Termos e Condições</a> </p>
+
+        </footer>
+        
+    </body>
+</html>

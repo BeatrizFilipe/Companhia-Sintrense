@@ -1,0 +1,277 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+
+
+
+/* search bar */
+
+.search input[type=text] {
+    margin-top: 30px;
+    padding: 10px;
+    padding-right: 35px;
+    margin-bottom: 70px;
+    border: 1px solid grey;
+    border-radius: 25px;
+    font-size: 15px;
+    outline: none;
+    color: grey;
+}
+
+input[type="text"]::placeholder
+{
+    color: grey;
+}
+
+.lupa{
+    margin-top: 30px; /* para coincidir com a search box*/
+    padding-top: 5px;
+    margin-left: -30px;
+    position: absolute;
+    cursor: pointer;
+}
+
+
+
+
+
+
+/* overall + mobile */
+
+nav{
+    z-index: 1;
+    position: fixed;
+    background: white;
+    margin: 0;
+    padding: 15px 20px;
+    width: 100%;
+    align-content: center;
+    display: inline-block;
+}
+
+.logo{
+    height:40px;  
+    line-height: 50px;
+    z-index: 10;
+}
+
+nav ul{
+    float: center;
+    margin-right: 20px;
+    width: 100%;
+    z-index: -5;
+}
+
+nav ul li{
+    justify-content: center;
+    display: block;
+    line-height: 80px;
+    width: 100%;
+    text-align: center;  
+}
+
+nav ul li a{
+    color:grey;
+    text-decoration: none;
+    font-size: 156%;              
+    text-align: center;
+    width: 100%;
+    font-weight: 400;
+
+}
+
+nav ul li a:hover{
+    text-decoration: none;
+}
+
+.page{
+    align-content: center;
+    text-align: center;
+    display: none;
+    background: white;
+    width: 100%;   
+}
+
+
+@media screen and (min-width:1024px){  
+    .page:hover{
+        background-color: #7070701e;
+    }
+    .search:hover{
+        background-color:  #ffffff00;
+    }
+}
+
+.toggle{
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    right: 30px;
+    text-align: right;
+    width: 50%;
+}
+
+/* hamburger */
+
+.bars{
+    top: -5px;
+    background: grey;
+    display: inline-block;
+    height: 4px;
+    position: relative;
+    width: 28px;
+    text-align: left;
+    -webkit-transform:rotate(180deg);
+    -moz-transform:rotate(1800deg);
+    transform:rotate(180deg);
+    transition: 0.3s;
+}
+
+.bars::before, .bars::after{
+    background: grey;
+    display: inline-block;
+    height: 4px;
+    position: absolute;
+    width: 28px;
+    content: "";
+}
+
+.bars::before{
+    -webkit-transform:rotate(0deg);
+    -moz-transform:rotate(0deg);
+    transform:rotate(0deg);
+    transition: 0.3s;
+    top: 8px;
+}
+
+.bars::after{
+    top: -8px;
+    -webkit-transform:rotate(0deg);
+    -moz-transform:rotate(0deg);
+    transform:rotate(0deg);
+    transition: 0.3s;
+}
+
+
+/* X */
+
+.bars.active{
+    top: -5px;
+    background: grey;
+    display: inline-block;
+    height: 4px;
+    position: relative;
+    width: 28px;
+    text-align: left;
+    -webkit-transform:rotate(45deg);
+    -moz-transform:rotate(45deg);
+    transform:rotate(45deg);
+    transition: 0.3s;
+}
+
+.bars.active::before, .bars.active::after{
+    background: grey;
+    display: inline-block;
+    height: 4px;
+    position: absolute;
+    width: 28px;
+    content: "";
+}
+
+.bars.active::before{
+    -webkit-transform:rotate(-90deg);
+    -moz-transform:rotate(-90deg);
+    transform:rotate(-90deg);
+    transition: 0.3s;
+    top: 0;
+}
+
+.bars.active::after{
+    top: 0;
+    -webkit-transform:rotate(-90deg);
+    -moz-transform:rotate(-90deg);
+    transform:rotate(-90deg);
+    transition: 0.3s;
+}
+
+.page.active{
+    margin: 5vh 0;
+    display: block;
+    width: 100%;
+    order: 0;
+}
+
+
+
+
+/* tablet + desktop */ 
+
+@media all and (min-width: 1200px) {
+
+    nav{
+        height: 73px;
+        display: flex;
+        align-items: center;
+        position: fixed;
+    }
+
+    nav ul {
+        position: absolute;
+        justify-content: space-between;
+        display: inline-block;
+        text-align: center;
+        width: 100%;
+    }
+    
+    nav ul li{
+        justify-content: center;
+        position: relative;
+        display: inline-block;
+        width: fit-content;
+    }
+
+    nav ul li a{
+        display: inline-block;
+        font-size: 20px;
+    }
+
+    .logo{
+        float: left;
+        left: 0;
+        flex: 1;
+    }
+
+    .page{
+        order: 1;
+        display: inline-block;
+        width: fit-content;
+        padding: 0px 30px;
+        background: none;
+    }
+
+    .search input[type=text] {margin-top: 0px;}
+
+    .lupa{margin-top: 20px;}
+
+    .search{
+        width: fit-content;
+        position: absolute;
+        float: right;
+        right: 0px;
+    }
+
+    .toggle{
+        order: 2;
+        display: none;
+    }
+}
+

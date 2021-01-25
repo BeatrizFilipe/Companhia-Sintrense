@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html>
+	<head>
+
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="autor" content="Companhia Sintrense">
+		<meta name="description" content="Companhia Sintrense">
+		
+		<!-- CSS -->
+		<link rel="stylesheet" type="text/css" href="css/reset.css">
+		<link rel="stylesheet" type="text/css" href="css/navbar.css">
+		<link rel="stylesheet" type="text/css" href="css/estilos-desktop.css">
+		<link rel="stylesheet" type="text/css" href="css/estilos-tablet.css"> 
+        <link rel="stylesheet" type="text/css" href="css/estilos-mobile.css">
+        <link rel="stylesheet" type="text/css" href="css/sub-page.css"> <!-- SUB PAGE STYLES -->
+		
+
+		<!-- Java Script -->
+
+		<script
+		src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+		integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8="
+		crossorigin="anonymous"></script>
+		<script>
+		$(function() {
+		$(".toggle").on("click", function() {
+			if ($(".page").hasClass("active")) {
+				$(".page").removeClass("active");
+			} else {
+				$(".page").addClass("active");
+			}
+		});
+	});
+		</script>
+
+		
+		<!-- Fonts -->
+		<style>
+			@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+		</style>
+
+
+		<!-- Page title -->
+		<title>Companhia Sintrense® :: Produtos</title>
+
+
+		<!-- Favicon -->
+		<link rel="icon" type="imagens/png" href="IMG/favicon.png">
+		
+        
+        <!-- Background Image -->
+        <style>
+            body {
+              background-image: url('IMG/background.jpg');
+            }
+         </style>
+    </head>
+    
+
+	<body>      
+        
+        <main>
+
+                <!-- navbar -->
+    
+            <nav>
+                <a href="index.html"><img src="IMG/logo.jpg" alt="Companhia Sintrense Logo" class="logo"></a>
+                <ul class="menu">
+                    <li><a href="soluções.html" class="page">Soluções</a></li>
+                    <li><a href="serviços.html" class="page">Serviços</a></li>
+                    <li><a href="produtos.html" class="page page-selected">Produtos</a></li>
+                    <li><a href="empresa.html" class="page">Empresa</a></li>
+                    <li class="search page">
+                        <input type="text" placeholder="Search...">
+                        <img src="IMG/lupa.svg" alt="Search" class="lupa">
+                    </li>
+                    <li class="toggle"><span class="bars"></span></li>
+                </ul>
+            </nav>
+
+                <!--Title-->
+
+            <div class="title">
+                <h2>Produtos</h2>
+            </div>
+
+        </main>
+
+
+        <!--Scroll UP-->
+
+		<button onclick="topFunction()" id="myBtn" class="myBtn"><img src="IMG/Grupo_27.svg" alt="Scroll Up"></button>
+
+		<script>
+			const myBtn = document.querySelector("#myBtn");
+
+			window.addEventListener("scroll", () => {
+				if (window.pageYOffset < 300) {
+					myBtn.classList.add("active");
+				} 
+				else {
+					myBtn.classList.remove("active");
+				}
+			})
+
+			myBtn.addEventListener("click", function (){
+				window.scrollTo(0, 0);
+			});
+
+		</script>
+
+
+
+        <!-- Conteudo -->
+
+        <section class="intro intro-prod">
+            <p>Com uma gama alargada de produtos, a Companhia Sintrense disponibiliza aos seus clientes soluções integradas de elevado desempenho, com uma atenção especial á qualidade, segurança e fiabilidade.</p>
+            <p>Categorizando os produtos, estes abrangem as seguintes áreas:</p>
+            <ul class="prod-list">
+                <li><a href="#eléctricas"> Instalações Eléctricas; </a></li>
+                <li><a href="#eléctricas">Instalações de Telecomunicações;</a></li>
+                <li><a href="#segurança">Instalações de Segurança;</a></li>
+                <li><a id="eléctricas" href="#segurança">Instalações de Climatização.</a></li>
+            </ul>
+        </section>
+
+        <section class="grelha-pro">
+            <ul>
+                <li>
+                    <h2>Instalações Eléctricas</h2>
+                    <p>A Companhia Sintrense executa instalações eléctricas de baixa tensão, incluindo as instalações de distribuição de energia, iluminação, tomadas de energia, alimentação de equipamentos, sinalização, comando e controlo.</p>
+                    <p>Com soluções completas para habitação, comércio e serviços, <a href="instalaçoes-electricas.html">poderá consultar aqui</a> algumas soluções pré configuradas, assim como outras soluções avulso disponíveis.</p>
+                </li>
+
+                <li>
+                    <h2>Instalações de Telecomunicações</h2>
+                    <p>Dentro das instalações de telecomunicações incluem-se as instalações de comunicação de voz e fax, as instalações de comunicações de dados e as instalações de recepção e distribuição de sinal de televisão e rádio.</p>
+                    <p>Para além das instalações regulamentares, ao abrigo do ITED, executamos ainda instalações personalizadas, adaptadas ás necessidades do cliente com o intuito de potencializar os recursos, aumentando a funcionalidade e desempenho.</p>
+                    <p><a href="instalaçoes-telecomunicaçoes.html">Poderá encontrar aqui</a> mais informações sobre as instalações de telecomunicações, assim como dos equipamentos comercializados pela Companhia Sintrense.</p>
+                    <hr id="segurança">
+                </li>
+
+                <li>
+                    <h2>Instalações de Segurança</h2>
+                    <p>Com o objectivo da protecção de pessoas, bens e dados, a Companhia Sintrense disponibiliza diversas soluções de segurança, integrada e individual.</p>
+                    <p>Dentro destas soluções contamos a detecção de intrusão, videovigilância, detecção e extinção de incêndios, detecção de gases, anti-roubo e controlo de acessos, assim como a sinalização de alarme, local e remota.</p>
+                    <p>Uma descrição mais pormenorizada das soluções de segurança disponibilizadas pela Companhia Sintrense <a href="instalaçoes-segurança.html">poderá ser encontrada aqui.</a></p>
+                </li>
+
+                <li>
+                    <h2>Instalações de Climatização</h2>
+                    <p>As instalações de climatização da Companhia Sintrense estão focadas no conforto do utilizador, dando o necessário relevo aos aspectos da saúde e da eficiência energética.</p>
+                    <p>Com uma ampla gama de produtos e instalações de ar condicionado, ventilação, aquecimento e tratamento de ar, procuramos fornecer soluções modernas e económicas, mantendo uma especial atenção ás novidades dos fabricantes.</p>
+                    <p><a href="instalaçoes-climatizaçao.html">Poderá obter mais informações aqui</a> sobre as instalações de climatização disponíveis.</p>
+                </li>
+            </ul>
+        </section>
+
+
+
+
+
+        <!-- FOOTER -->
+
+        <footer>
+
+			<div class="inner_footer">
+				<div class="recrut">
+					<h2>Recrutamento</h2>
+					<a href="mailto:geral@companhiasintrense.pt" title="Contact me by mail">Envie-nos o seu C.V.</a>
+				</div>
+
+				<div class="links">
+					<h2>Links</h2>
+					<ul>
+						<li><a href="mapa-site.html">Mapa do Site</a></li>
+						<li><a href="soluções.html">Soluções</a></li>
+						<li><a href="produtos.html">Produtos</a></li>
+						<li><a href="empresa.html">Sobre Nós</a></li>
+						<li><a href="contactos.html">Contactos</a></li>
+					</ul>
+				</div>
+
+				<div id="contactos" class="contactos">
+					<ul>
+						<li >
+							<p>R. Humberto Delgado, 26 - G.7 <br>
+								Abrunheira <br>
+								2710-050 Sintra <br>
+								PORTUGAL
+								</p>
+						</li>
+					
+						<li>
+							<a href="tel:+351219156203" title="Contact me by phone">Tel.: +351 219 156 203</a>
+						</li>
+						
+						<li>
+							<a href="tel:+351219156129" title="Contact me by phone">Fax: +351 219 156 129</a>
+						</li>
+
+						<li>
+							<a href="mailto:geral@companhiasintrense.pt" title="Contact me by mail">geral@companhiasintrense.pt</a>
+						</li>
+					</ul>
+				</div>
+				
+			</div>
+
+			<p class="copy"> © 2008 Companhia Sintrense de Instalações, Lda <a href="http://www.companhiasintrense.pt/empresa/termosecondicoes.html" target="blank">Termos e Condições</a> </p>
+
+        </footer>
+        
+    </body>
+</html>

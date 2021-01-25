@@ -1,0 +1,433 @@
+
+/* Page Selected */
+
+ @media screen and (min-width:1024px){  
+    .page-selected{
+        background-color: #70707056;
+    }
+}
+
+
+
+/* sub-page standard */
+
+.title{
+    height:35vh;
+    justify-content: bottom right;
+    padding: 50px;
+    text-align: right;
+}
+
+.title h2{
+    color: white;
+    font-size: 25px;
+    text-justify: right;
+    margin-top: 90px;
+}
+
+.intro{
+    min-height: 100px;
+    padding: 100px 15%;
+    background-color: rgba(255, 255, 255, 80%);
+
+    font-size: 18px;
+    text-indent: 35px;
+    color: #707070;
+    line-height: 1.8;
+}
+
+p a {
+    text-decoration: none;
+    color: #707070;
+    font-weight: 600;
+}
+
+.links li a{
+    font-weight: 400;
+    color: white;
+}
+
+.contactos ul li a{font-weight: 400;}
+
+
+@media (min-width: 768px) and (orientation: landscape) {  
+    .title h2{
+        color: white;
+        font-size: 45px;
+        text-justify: right;
+        margin-top: 100px;
+        margin-right: 100px;
+    }
+}
+
+
+@media screen and (min-width:1024px){ 
+    p a:hover{
+        text-decoration: underline;
+    }
+}
+
+
+
+/* Serviços */ 
+
+.grelha-ser ul{
+    display: grid;
+    grid-template-columns: repeat(auto-fit);
+    margin: 50px 7%;
+    align-items: center;
+    gap: 40px;
+}
+
+.grelha-ser li{
+    height: 100%;
+    padding: 4% 7% 5% 7%;
+    background-color: rgba(255, 255, 255, 80%);
+    border-radius: 40px;
+    color: #707070;
+    display: inline-block;
+}
+
+.grelha-ser li h2{
+    font-size: 30px;
+    color: #597EAB;
+    line-height: 1.3;
+    padding: 0 0 20px 2%;
+}
+
+.grelha-ser li p{
+    font-size: 18px;
+    text-indent: 50px;
+    color: #707070;
+    padding: 5px 0 0 0;
+    line-height: 1.6;
+    padding-bottom: 5px;
+}
+
+
+
+/* Projecto */
+
+.intro-proj p{
+    padding-bottom: 20px;
+}
+
+.intro-proj ul{
+    padding-bottom: 20px;
+    margin-top: -10px;
+    text-indent: 100px;
+}
+
+
+
+/* Manutenção */
+
+.intro-man ul{
+    text-indent: 100px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    line-height: 2;
+}
+
+.intro-man h3{
+    padding-top: 20px;
+    text-decoration: underline;
+    margin-bottom: -50px;
+}
+
+
+
+/* Manutenção II - Manutenção-prev */
+
+.intro-man-prev h2{
+    color: #597EAB;
+    font-size: 30px;
+    margin-top: -40px;
+    padding-bottom: 30px;
+}
+
+.intro-man-prev p{
+    padding-bottom: 10px;
+}
+
+.intro-man-prev ul{
+    text-indent: 100px;
+    padding-bottom: 20px;
+    line-height: 2.2;
+
+}
+
+
+
+/* Consultoria */
+
+.intro-cons ul{
+    text-indent: 100px;
+    line-height: 2.2;
+}
+
+.analise-viab li{
+    text-indent: 25px;
+    padding-left: 150px;
+}
+
+
+
+/* Produtos */
+
+.intro-prod ul li{
+    text-indent: 100px;
+    line-height: 2.2;
+}
+
+.intro-prod ul{ padding-top: 10px;}
+
+li a {
+    text-decoration: none;
+    color: #707070;
+    font-weight: 600;
+}
+
+@media screen and (min-width:1024px){ 
+    li a:hover{
+        text-decoration: underline;
+    }
+}
+
+.grelha-pro ul{
+    display: grid;
+    grid-gap: 35px;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 2fr));
+    margin: 70px 4%;
+    align-items: center;
+}
+
+.grelha-pro li{
+    height: 100%;
+    padding: 5% 7% 6% 7%;
+    background-color: rgba(255, 255, 255, 80%);
+    border-radius: 40px;
+    color: #707070;
+    display: inline-block;
+}
+
+.grelha-pro li h2{
+    font-size: 30px;
+    color: #597EAB;
+    line-height: 1.3;
+    padding: 0 0 20px 2%;
+    text-align: right;
+}
+
+.grelha-pro li p{
+    font-size: 18px;
+    text-indent: 50px;
+    color: #707070;
+    padding: 5px 0 0 0;
+    line-height: 1.6;
+    padding-bottom: 5px;
+}
+
+@media screen and (max-width:700px){  
+    .grelha-pro ul{
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+}
+
+
+
+/* Instalações - Eletetricas, Telecomunicações, Segurança, climatização */
+
+.list{
+    text-indent: 100px;
+    line-height: 2.2;
+    padding-bottom: 10px;
+}
+
+.list li p{ 
+    text-decoration: underline;
+    padding-top: 10px;
+}
+
+.list-2{
+    text-indent: 150px;
+}
+
+
+
+
+/* Empresa */
+
+.grelha-emp ul{
+    display: grid;
+    grid-gap: 2.5%;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 3fr));
+    margin: 70px 50px;
+    align-items: center;
+}
+
+.grelha-emp li{
+    height: 100%;
+    padding: 6% 8% 6% 8%;
+    background-color: rgba(255, 255, 255, 80%);
+    border-radius: 40px;
+    color: #707070;
+    display: inline-block;
+}
+
+.grelha-emp li h2{
+    font-size: 30px;
+    color: #597EAB;
+    line-height: 1.3;
+    padding: 0 0 20px 2%;
+    text-align: right;
+}
+
+.grelha-emp li p{
+    font-size: 18px;
+    text-indent: 50px;
+    color:  #707070;
+    padding: 5px 0 0 0;
+    line-height: 1.6;
+    padding-bottom: 5px;
+}
+
+@media screen and (max-width: 1000px){  
+    .grelha-emp ul{
+        grid-template-columns: repeat(auto-fit, minmax(500px, 2fr));
+        margin-bottom: 100px;
+    }
+}
+
+@media screen and (max-width: 500px){  
+    .grelha-emp ul{
+        grid-template-columns: repeat(auto-fit, minmax(200px, 2fr));
+    }
+}
+
+.missão{
+    min-height: 100px;
+    padding: 50px 15% 100px 15%;
+    background-color: rgba(255, 255, 255, 80%);
+
+    font-size: 18px;
+    text-indent: 35px;
+    color: #707070;
+    line-height: 1.8;
+}
+
+.missão h2{
+    font-size: 30px;
+    color: #597EAB;
+    line-height: 1.3;
+    text-align: left;
+    padding: 70px 0 25px 0;
+    text-indent: 0;
+}
+
+.missão h3{
+    font-size: 20px;
+    font-weight: bold;
+    padding: 40px 0 5px 2%;
+    color: #8b8b8b;
+}
+
+.missão p{
+    padding: 5px 0;
+}
+
+.csi{
+    font-size:40px;
+    padding:0;
+    margin:0;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: initial;
+}
+
+
+
+/* Mapa do Site */
+
+.intro-mapa{
+    line-height: 2.5;
+    text-decoration: none;
+    
+}
+
+.intro-mapa h3 a{
+    font-size: 22px;
+    font-weight: bold;
+    color: #707070;
+}
+
+.intro-mapa h3 a:hover{
+    text-decoration: underline;
+}
+
+.intro-mapa h4{
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.intro-mapa p{
+    text-indent: 150px;
+}
+
+.intro-mapa p a{
+    font-weight: 400;
+}
+
+
+
+/* Contactos */
+
+.title-contactos{
+    background-color: #707070d2;
+    color: white;
+}
+
+.intro-contactos{
+    padding: 0px 3% 0 3%;
+    color: white;
+
+    text-indent: 0;
+    background-color: #707070d2;
+    display: flex;
+    align-items: flex-end;
+}
+
+.intro-contactos div{
+    float: left;
+    margin-left: 100px;
+}
+
+
+.contact-info{
+    padding-bottom: 200px;
+}
+
+.contact-info-morada{
+    margin-bottom: 35px;
+}
+
+.intro-contactos ul li a{
+    color: white;
+    font-weight: bold;
+}
+
+@media screen and (max-width:768px){ 
+    .intro-contactos{
+        padding: 0px 0 0 10%;
+        display: inline-block;
+        align-items: center;
+    }
+
+    .intro-contactos div{
+        padding-left: 20px;
+    }
+
+    .mapa{
+        width: 100%;
+        justify-content: center;
+    }
+}

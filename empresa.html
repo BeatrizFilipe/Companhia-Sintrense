@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+	<head>
+
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="autor" content="Companhia Sintrense">
+		<meta name="description" content="Companhia Sintrense">
+		
+		<!-- CSS -->
+		<link rel="stylesheet" type="text/css" href="css/reset.css">
+		<link rel="stylesheet" type="text/css" href="css/navbar.css">
+		<link rel="stylesheet" type="text/css" href="css/estilos-desktop.css">
+		<link rel="stylesheet" type="text/css" href="css/estilos-tablet.css"> 
+        <link rel="stylesheet" type="text/css" href="css/estilos-mobile.css">
+        <link rel="stylesheet" type="text/css" href="css/sub-page.css"> <!-- SUB PAGE STYLES -->
+		
+
+		<!-- Java Script -->
+
+		<script
+		src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+		integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8="
+		crossorigin="anonymous"></script>
+		<script>
+		$(function() {
+		$(".toggle").on("click", function() {
+			if ($(".page").hasClass("active")) {
+				$(".page").removeClass("active");
+			} else {
+				$(".page").addClass("active");
+			}
+		});
+	});
+		</script>
+
+		
+		<!-- Fonts -->
+		<style>
+			@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+		</style>
+
+
+		<!-- Page title -->
+		<title>Companhia Sintrense® :: Empresa</title>
+
+
+		<!-- Favicon -->
+		<link rel="icon" type="imagens/png" href="IMG/favicon.png">
+		
+        
+        <!-- Background Image -->
+        <style>
+            body {
+              background-image: url('IMG/background.jpg');
+            }
+         </style>
+    </head>
+    
+
+	<body>        
+
+        <main>
+
+                <!-- navbar -->
+    
+            <nav>
+                <a href="index.html"><img src="IMG/logo.jpg" alt="Companhia Sintrense Logo" class="logo"></a>
+                <ul class="menu">
+                    <li><a href="soluções.html" class="page">Soluções</a></li>
+                    <li><a href="serviços.html" class="page">Serviços</a></li>
+                    <li><a href="produtos.html" class="page">Produtos</a></li>
+                    <li><a href="empresa.html" class="page page-selected">Empresa</a></li>
+                    <li class="search page">
+                        <input type="text" placeholder="Search...">
+                        <img src="IMG/lupa.svg" alt="Search" class="lupa">
+                    </li>
+                    <li class="toggle"><span class="bars"></span></li>
+                </ul>
+            </nav>
+
+                <!--Title-->
+
+            <div class="title">
+                <h2>Empresa</h2>
+            </div>
+
+        </main>
+
+
+        <!--Scroll UP-->
+
+		<button onclick="topFunction()" id="myBtn" class="myBtn"><img src="IMG/Grupo_27.svg" alt="Scroll Up"></button>
+
+		<script>
+			const myBtn = document.querySelector("#myBtn");
+
+			window.addEventListener("scroll", () => {
+				if (window.pageYOffset < 300) {
+					myBtn.classList.add("active");
+				} 
+				else {
+					myBtn.classList.remove("active");
+				}
+			})
+
+			myBtn.addEventListener("click", function (){
+				window.scrollTo(0, 0);
+			});
+
+		</script>
+
+
+
+        <!-- Conteudo -->
+
+        <section class="intro">
+            <p>Estabelecida em 2006, a Companhia Sintrense teve por base o negócio familiar, que operava há já algumas décadas no distrito de Lisboa.</p>
+            <p>Tendo por objecto o projecto, execução e manutenção de instalações eléctricas, executamos também instalações de telecomunicações, segurança e climatização em edifícios residenciais, de serviços e comércio.</p>
+        </section>
+
+        <section class="grelha-emp">
+            <ul>
+                <li>
+                    <h2>Equipa</h2>
+                    <p>Com uma equipa jovem e dinâmica, maioritariamente formada na 'casa' em termos profissionais, contamos com um grupo coeso e funcional, com elevada disponibilidade e motivação, marcada ainda pela seriedade e educação.</p>
+                </li>
+
+                <li>
+                    <h2>Fabricantes e Fornecedores</h2>
+                    <p>É o objectivo da Companhia Sintrense fornecer um produto de elevada qualidade, tomando um cuidado acrescido na escolha dos materiais e processos utilizados. Para tal contamos com o apoio técnico dos fabricantes e fornecedores, com os quais mantemos uma relação de proximidade e intercâmbio de informações, facilitando a obtenção de aconselhamento sobre os produtos e respectivos processos de aplicação.</p>
+                </li>
+
+                <li>
+                    <h2>Parceiros</h2>
+                    <p>Numa perspectiva de serviço global contamos ainda com o apoio dos parceiros, especializados nas outras áreas da construção civil.</p>
+                    <p>Estas parcerias permitem a agilização em obra das diferentes especialidades, traduzindo-se num serviço completo, com a consequente redução de custos e preocupações para o cliente.</p>
+                </li>
+            </ul>
+        </section>
+
+        <section class="missão">
+            <h2>Missão</h2>
+            <div>
+                <h3>O Presente</h3>
+                <p>Com a atenção centrada no cliente e suas necessidades, os princípios organizacionais, funcionais e produtivos da Companhia Sintrense regem-se por uma politica de rigor, sem menosprezar os factores de segurança, ergonomia e economia.</p>
+                <p>Nos projectos e obras é sempre prestada uma especial atenção ás expectativas do cliente, de onde são retirados os parâmetros para aplicação das regulamentações vigentes, dando-se o apoio na escolha das especificações com base na nossa experiência e conhecimento dos processos e materiais disponíveis no mercado.</p>
+                <p>Verificando-se uma excepcionalmente acelerada evolução nas expectativas dos utilizadores, acompanhada pela evolução dos materiais e processos num ritmo quase paralelo, colocamos uma significativa parte dos recursos no acompanhamento destas evoluções, não só das especialidades eléctricas como também nas outras especialidades que se interligam com as nossas instalações.</p>
+            </div>
+
+            <div>
+                <h3>O Futuro</h3>
+                <p>Com o objectivo de marcar a diferença pela positiva, estamos a preparar o desenvolvimento de produtos Companhia Sintrense, na tentativa de colmatar algumas lacunas detectadas nas gamas disponíveis actualmente no mercado.</p>
+                <p>A par dos novos produtos, será criado um catálogo de produtos e serviços para as soluções mais comuns, incluindo as características dos materiais (descrição, vantagens e desvantagens) assim como uma previsão de custos, fornecendo ao cliente uma base decisória na escolha das suas instalações.</p>
+                <p>Este catálogo de soluções será publicado brevemente neste site. Caso deseje ser informado da sua disponibilização, assinale a respectiva caixa no nosso formulário de <a href="contactos.html">contacto</a>.</p>
+            </div>
+
+            <div>
+                <h2>A envolvente da <span class="csi">Companhia Sintrense<sup>®</sup></span></h2>
+                <p>Contamos ter este conteúdo disponível brevemente.</p>
+                <p>Aqui poderá encontrar informações sobre o Concelho de Sintra, com mais destaque da serra de Sintra, as suas atracções e pontos a visitar, assim como o seu ambiente e classificação <a href="http://whc.unesco.org/en/list/723" target="blank">Património Mundial</a> pela UNESCO.</p>
+                <p>Entretanto, convidamos a uma visita ao <a href="https://www.parquesdesintra.pt/pt/" target="blank">Monte da Lua</a>, conhecendo a paisagem mágica dos Parques de Sintra.</p>
+                <p>Caso deseje ser notificado da disponibilização destes conteúdos, marque a respectiva caixa no nosso formulário de <a href="contactos.html">contacto</a>.</p>
+            </div>
+        </section>
+
+
+
+
+
+        <!-- FOOTER -->
+
+        <footer>
+
+			<div class="inner_footer">
+				<div class="recrut">
+					<h2>Recrutamento</h2>
+					<a href="mailto:geral@companhiasintrense.pt" title="Contact me by mail">Envie-nos o seu C.V.</a>
+				</div>
+
+				<div class="links">
+					<h2>Links</h2>
+					<ul>
+						<li><a href="mapa-site.html">Mapa do Site</a></li>
+						<li><a href="soluções.html">Soluções</a></li>
+						<li><a href="produtos.html">Produtos</a></li>
+						<li><a href="empresa.html">Sobre Nós</a></li>
+						<li><a href="contactos.html">Contactos</a></li>
+					</ul>
+				</div>
+
+				<div id="contactos" class="contactos">
+					<ul>
+						<li >
+							<p>R. Humberto Delgado, 26 - G.7 <br>
+								Abrunheira <br>
+								2710-050 Sintra <br>
+								PORTUGAL
+								</p>
+						</li>
+					
+						<li>
+							<a href="tel:+351219156203" title="Contact me by phone">Tel.: +351 219 156 203</a>
+						</li>
+						
+						<li>
+							<a href="tel:+351219156129" title="Contact me by phone">Fax: +351 219 156 129</a>
+						</li>
+
+						<li>
+							<a href="mailto:geral@companhiasintrense.pt" title="Contact me by mail">geral@companhiasintrense.pt</a>
+						</li>
+					</ul>
+				</div>
+				
+			</div>
+
+			<p class="copy"> © 2008 Companhia Sintrense de Instalações, Lda <a href="http://www.companhiasintrense.pt/empresa/termosecondicoes.html" target="blank">Termos e Condições</a> </p>
+
+        </footer>
+    
+    </body>
+</html>

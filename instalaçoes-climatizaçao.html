@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html>
+	<head>
+
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="autor" content="Companhia Sintrense">
+		<meta name="description" content="Companhia Sintrense">
+		
+		<!-- CSS -->
+		<link rel="stylesheet" type="text/css" href="css/reset.css">
+		<link rel="stylesheet" type="text/css" href="css/navbar.css">
+		<link rel="stylesheet" type="text/css" href="css/estilos-desktop.css">
+		<link rel="stylesheet" type="text/css" href="css/estilos-tablet.css"> 
+        <link rel="stylesheet" type="text/css" href="css/estilos-mobile.css">
+        <link rel="stylesheet" type="text/css" href="css/sub-page.css"> <!-- SUB PAGE STYLES -->
+		
+
+		<!-- Java Script -->
+
+		<script
+		src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+		integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8="
+		crossorigin="anonymous"></script>
+		<script>
+		$(function() {
+		$(".toggle").on("click", function() {
+			if ($(".page").hasClass("active")) {
+				$(".page").removeClass("active");
+			} else {
+				$(".page").addClass("active");
+			}
+		});
+	});
+		</script>
+
+		
+		<!-- Fonts -->
+		<style>
+			@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+		</style>
+
+
+		<!-- Page title -->
+		<title>Companhia Sintrense® :: Instalações de Climatização</title>
+
+
+		<!-- Favicon -->
+		<link rel="icon" type="imagens/png" href="IMG/favicon.png">
+		
+        
+        <!-- Background Image -->
+        <style>
+            body {
+              background-image: url('IMG/background.jpg');
+            }
+         </style>
+    </head>
+    
+
+	<body>        
+
+        <main>
+
+                <!-- navbar -->
+    
+            <nav>
+                <a href="index.html"><img src="IMG/logo.jpg" alt="Companhia Sintrense Logo" class="logo"></a>
+                <ul class="menu">
+                    <li><a href="soluções.html" class="page">Soluções</a></li>
+                    <li><a href="serviços.html" class="page">Serviços</a></li>
+                    <li><a href="produtos.html" class="page">Produtos</a></li>
+                    <li><a href="empresa.html" class="page">Empresa</a></li>
+                    <li class="search page">
+                        <input type="text" placeholder="Search...">
+                        <img src="IMG/lupa.svg" alt="Search" class="lupa">
+                    </li>
+                    <li class="toggle"><span class="bars"></span></li>
+                </ul>
+            </nav>
+
+                <!--Title-->
+
+            <div class="title">
+                <h2>Instalações de Climatização</h2>
+            </div>
+        </main>
+
+
+        <!--Scroll UP-->
+
+		<button onclick="topFunction()" id="myBtn" class="myBtn"><img src="IMG/Grupo_27.svg" alt="Scroll Up"></button>
+
+		<script>
+			const myBtn = document.querySelector("#myBtn");
+
+			window.addEventListener("scroll", () => {
+				if (window.pageYOffset < 300) {
+					myBtn.classList.add("active");
+				} 
+				else {
+					myBtn.classList.remove("active");
+				}
+			})
+
+			myBtn.addEventListener("click", function (){
+				window.scrollTo(0, 0);
+			});
+
+		</script>
+
+
+        <!-- Conteudo -->
+
+        <section class="intro">
+            <p>
+                As instalações de climatização e controlo ambiental Companhia Sintrense utilizam como forma de energia a electricidade. Este fonte de energia permite a instalação de equipamentos de funcionamento limpo, seguro e confortável.
+            </p>
+            <p>
+                Verifica-se ainda que os equipamentos eléctricos apresentam um rendimento energético bastante elevado, permitindo o controlo linear do funcionamento, traduzindo-se numa redução dos custos de exploração.
+            </p>
+            <p>
+                As instalações de climatização Companhia Sintrense dividem-se pelas seguintes especialidades:
+            </p>
+            <ul class="list">
+                <li><a href="#aquecimento">Aquecimento</a></li>
+                <li><a href="#ac">Ar Condicionado</a></li>
+                <li><a href="#ventilaçao">Ventilação</a></li>
+                <li><a href="#purificaçao">Purificação de Ar</a></li>
+                <hr id="aquecimento">
+                <hr id="ac">
+            </ul>
+        </section>
+
+        <section class="grelha-pro" >
+            <ul>
+                <li>
+                    <h2>Aquecimento</h2>
+                    <p>
+                        A Companhia Sintrense comercializa e instala equipamentos de aquecimento ambiental fixos de funcionamento variado. 
+                        De entre estes destacam-se os acumuladores de calor, irradiadores de parede a óleo e de indução e os sistemas de pavimento radiante.
+                    </p>
+                    <p>
+                        Cada um dos sistemas tem o seu modo de funcionamento e aplicação, existindo soluções para aplicação durante a construção, 
+                        assim como soluções para remodelações e para construções concluídas. <a href="contactos.html">Contacte-nos</a> para saber qual a solução mais adaptada ao seu caso.
+                    </p>
+                </li>
+                <li>
+                    <h2>Ar Condicionado</h2>
+                    <p>
+                        A gama de aparelhos de ar condicionado comercializada pela Companhia Sintrense inclui aparelhos do tipo 'Split', 'Multisplit', de condutas, 
+                        tradicionais e 'Inverter'. Acumulando funções de tratamento de ar, com purificação activa, humidificação e desumidificação, 
+                        as soluções de ar condicionado podem ser adaptadas para ambientes domésticos, comerciais e industriais.
+                    </p>
+                    <hr id="ventilaçao">
+                </li>
+                <li>
+                    <h2>Ventilação</h2>
+                    <p>
+                        Aplicando-se em construção de habitação, nas cozinhas, casas de banho e garagens, assim como no comércio e serviços, para renovação de ar, 
+                        os sistemas de ventilação Companhia Sintrense podem ser comandados automaticamente por sistemas de detecção de gases ou por controladores horários.
+                    </p>
+                    
+                </li>
+                <li>
+                    <h2>Purificação de Ar</h2>
+                    <p>
+                        Os sistemas de purificação de ar Companhia Sintrense têm como objectivo a limpeza de partículas em suspensão, removendo-se odores, poeiras e, 
+                        principalmente, elementos alergénicos. Com aplicação em ambientes domésticos e comerciais, têm grande expressão em ambientes industriais onde 
+                        processos de grande sensibilidade obrigam á execução em salas limpas, isentas de partículas.
+                    </p>
+                    <p>
+                        Com o funcionamento em conjunto dos sistemas de climatização Companhia Sintrense, obtêm-se soluções completas de controlo ambiental, 
+                        com elevado conforto e consequentes ganhos em termos de saúde e bem estar. <a href="contactos.html">Contacte-nos</a> para saber mais sobre estas soluções.
+                    </p>
+                </li> 
+            
+            
+        </section>
+    
+
+        <!-- FOOTER -->
+
+        <footer>
+
+			<div class="inner_footer">
+				<div class="recrut">
+					<h2>Recrutamento</h2>
+					<a href="mailto:geral@companhiasintrense.pt" title="Contact me by mail">Envie-nos o seu C.V.</a>
+				</div>
+
+				<div class="links">
+					<h2>Links</h2>
+					<ul>
+						<li><a href="mapa-site.html">Mapa do Site</a></li>
+						<li><a href="soluções.html">Soluções</a></li>
+						<li><a href="produtos.html">Produtos</a></li>
+						<li><a href="empresa.html">Sobre Nós</a></li>
+						<li><a href="contactos.html">Contactos</a></li>
+					</ul>
+				</div>
+
+				<div id="contactos" class="contactos">
+					<ul>
+						<li >
+							<p>R. Humberto Delgado, 26 - G.7 <br>
+								Abrunheira <br>
+								2710-050 Sintra <br>
+								PORTUGAL
+								</p>
+						</li>
+					
+						<li>
+							<a href="tel:+351219156203" title="Contact me by phone">Tel.: +351 219 156 203</a>
+						</li>
+						
+						<li>
+							<a href="tel:+351219156129" title="Contact me by phone">Fax: +351 219 156 129</a>
+						</li>
+
+						<li>
+							<a href="mailto:geral@companhiasintrense.pt" title="Contact me by mail">geral@companhiasintrense.pt</a>
+						</li>
+					</ul>
+				</div>
+				
+			</div>
+
+			<p class="copy"> © 2008 Companhia Sintrense de Instalações, Lda <a href="http://www.companhiasintrense.pt/empresa/termosecondicoes.html" target="blank">Termos e Condições</a> </p>
+
+        </footer>
+        
+    </body>
+</html>

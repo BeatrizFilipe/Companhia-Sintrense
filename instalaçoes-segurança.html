@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html>
+	<head>
+
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="autor" content="Companhia Sintrense">
+		<meta name="description" content="Companhia Sintrense">
+		
+		<!-- CSS -->
+		<link rel="stylesheet" type="text/css" href="css/reset.css">
+		<link rel="stylesheet" type="text/css" href="css/navbar.css">
+		<link rel="stylesheet" type="text/css" href="css/estilos-desktop.css">
+		<link rel="stylesheet" type="text/css" href="css/estilos-tablet.css"> 
+        <link rel="stylesheet" type="text/css" href="css/estilos-mobile.css">
+        <link rel="stylesheet" type="text/css" href="css/sub-page.css"> <!-- SUB PAGE STYLES -->
+		
+
+		<!-- Java Script -->
+
+		<script
+		src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+		integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8="
+		crossorigin="anonymous"></script>
+		<script>
+		$(function() {
+		$(".toggle").on("click", function() {
+			if ($(".page").hasClass("active")) {
+				$(".page").removeClass("active");
+			} else {
+				$(".page").addClass("active");
+			}
+		});
+	});
+		</script>
+
+		
+		<!-- Fonts -->
+		<style>
+			@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+		</style>
+
+
+		<!-- Page title -->
+		<title>Companhia Sintrense® :: Instalações de Segurança</title>
+
+
+		<!-- Favicon -->
+		<link rel="icon" type="imagens/png" href="IMG/favicon.png">
+		
+        
+        <!-- Background Image -->
+        <style>
+            body {
+              background-image: url('IMG/background.jpg');
+            }
+         </style>
+    </head>
+    
+
+	<body>        
+
+        <main>
+
+                <!-- navbar -->
+    
+            <nav>
+                <a href="index.html"><img src="IMG/logo.jpg" alt="Companhia Sintrense Logo" class="logo"></a>
+                <ul class="menu">
+                    <li><a href="soluções.html" class="page">Soluções</a></li>
+                    <li><a href="serviços.html" class="page">Serviços</a></li>
+                    <li><a href="produtos.html" class="page">Produtos</a></li>
+                    <li><a href="empresa.html" class="page">Empresa</a></li>
+                    <li class="search page">
+                        <input type="text" placeholder="Search...">
+                        <img src="IMG/lupa.svg" alt="Search" class="lupa">
+                    </li>
+                    <li class="toggle"><span class="bars"></span></li>
+                </ul>
+            </nav>
+
+                <!--Title-->
+
+            <div class="title">
+                <h2>Instalações de Segurança</h2>
+            </div>
+        </main>
+
+
+        <!--Scroll UP-->
+
+		<button onclick="topFunction()" id="myBtn" class="myBtn"><img src="IMG/Grupo_27.svg" alt="Scroll Up"></button>
+
+		<script>
+			const myBtn = document.querySelector("#myBtn");
+
+			window.addEventListener("scroll", () => {
+				if (window.pageYOffset < 300) {
+					myBtn.classList.add("active");
+				} 
+				else {
+					myBtn.classList.remove("active");
+				}
+			})
+
+			myBtn.addEventListener("click", function (){
+				window.scrollTo(0, 0);
+			});
+
+		</script>
+
+
+        <!-- Conteudo -->
+
+        <section class="intro">
+            <p>
+                Quer seja por imposição legal ou pela procura da protecção, as instalações de segurança assumem hoje um importante 
+                factor a considerar em todos os edifícios, residenciais, comércio, serviços ou industriais.
+            </p>
+            <p>
+                A Companhia Sintrense disponibiliza aos seus clientes vários tipos de instalações de segurança, destacando-se as seguintes:
+            </p>
+            <ul class="list">
+                <li><a href="#intrusao">Detecção de Intrusão</a></li>
+                <li><a href="#incendios">Detecção de Incêndios</a></li>
+                <li><a href="#carbono">Detecção de Monóxido de Carbono</a></li>
+                <li><a href="#fugas">Detecção de Fugas de Gás</a></li>
+                <li><a href="#inundaçoes">Detecção de Inundações</a></li>
+                <li><a href="#vigilancia">Vídeo Vigilância</a></li>
+                <li><a href="#acessos">Controlo de Acessos</a></li>
+                <li><a href="#anti-roubo">Anti-roubo</a></li>
+                <li><a href="#extinçao">Extinção de Incêndios</a></li>
+                <hr id="intrusao">
+            </ul>
+        </section>
+
+        <section class="grelha-ser" >
+            <ul>
+                <li>
+                    <h2>Detecção de Intrusão</h2>
+                    <p>
+                        Assumindo uma das primeiras linhas de defesa contra roubo, os sistemas de detecção de intrusão apresentam um bom efeito dissuasor 
+                        através da sinalização de presença de alarme. Este efeito dissuasor é garantido pela presença das sirenes de alarme e pela indicação 
+                        de presença de alarme da sinalética aplicada nos sistemas Companhia Sintrense.
+                    </p>
+                    <p>
+                        Concretizando-se a intrusão não autorizada, os sistemas Companhia Sintrense fazem sinalização de alarme através de sirenes de alto desempenho, 
+                        em conjunto com comunicadores de alarme á distância. Este comunicadores podem ser do tipo telefónico ou informático (TCP/IP), 
+                        podendo fazer a comunicação de alarmes para centrais comerciais ou para telefones particulares.
+                    </p>
+                    <hr id="incendios">
+                </li>
+
+                <li>
+                    <h2>Detecção de Incêndios</h2>
+                    <p>
+                        Com um leque abrangente de sistemas de detecção de incêndios, a Companhia Sintrense executa sistemas de elevado desempenho, 
+                        convencionais e endereçáveis, assim como por barreiras de infravermelhos e análise molecular do ar.
+                    </p>
+                    <p>
+                        Estes sistemas fazem a sinalização de alarme localmente, permitindo a evacuação numa fase inicial do incêndio, 
+                        permitindo ainda a comunicação remota do alarme, a actuação sobre sistemas automáticos de extinção de incêndios e a abertura automática 
+                        de portas de evacuação.
+                    </p>
+                    <hr id="carbono">
+                </li>
+
+                <li>
+                    <h2>Detecção de Monóxido de Carbono</h2>
+                    <p>
+                        O monóxido de carbono é um subproduto que resulta da queima incompleta de combustíveis fosseis e materiais orgânicos. 
+                        Libertado sob a forma de gás, é incolor e com odor quase imperceptível. No entanto, o monóxido de carbono revela-se como um gás bastante venenoso, 
+                        podendo matar um ser humano adulto em poucos minutos.
+                    </p>
+                    <p>
+                        Os sistemas de detecção de monóxido de carbono da Companhia Sintrense podem ser montados em garagens, cozinhas, 
+                        salas técnicas com caldeiras ou esquentadores a gás ou gasóleo, salas com lareiras, salamandras, etc...
+                    </p>
+                    <p>
+                        Com a detecção da presença do gás, o sistema sinaliza a atmosfera perigosa, prevenindo para a evacuação do local. 
+                        Adicionalmente, pode actuar sobre os sistemas de ventilação, de modo a proceder á renovação do ar.
+                    </p>
+                    <hr id="fugas">
+                </li>
+
+                <li>
+                    <h2>Detecção de Fugas de Gás</h2>
+                    <p>
+                        Com aplicação em cozinhas domésticas e industriais, salas técnicas de caldeiras ou esquentadores, 
+                        salas de depósitos de gás ou salas de contadores, os sistemas de detecções de gás Companhia Sintrense monitorizam o ambiente, alertando para fugas.
+                    </p>
+                    <p>
+                        Quando em alarme, o sistema sinaliza através de sirenes e avisadores luminosos, actuando sobre electroválvulas, cortando o fornecimento de gás. 
+                        Adicionalmente pode actuar automaticamente sobre sistemas de ventilação forçada e comunicar remotamente o alarme.
+                    </p>
+                    <hr id="inundaçoes">
+                </li>
+
+                <li>
+                    <h2>Detecção de Inundações</h2>
+                    <p>
+                        Os sistemas de detecção de inundações podem ser aplicados em casas de banho e cozinhas, caves, salas técnicas ou em salas criticas, 
+                        como arquivos e centros informáticos ou de equipamentos sensíveis e valiosos.
+                    </p>
+                    <p>
+                        Estes sistemas sinalizam a inundação através de sirenes, podendo ainda ser ligados a comunicadores para sinalização remota, 
+                        electroválvulas para corte do abastecimento de água ou bombas de escoamento de águas, como equipamentos de recurso.
+                    </p>
+                    <hr id="vigilancia">
+                </li>
+
+                <li>
+                    <h2>Vídeo Vigilância</h2>
+                    <p>
+                        Os sistemas de vídeo vigilância Companhia Sintrense são uma componente importante para a protecção de pessoas e bens. 
+                        Logo em primeira linha de defesa, a presença de câmaras de vídeo revela-se como um dissuasor para comportamentos menos aceitáveis.
+                    </p>
+                    <p>
+                        Com câmaras de montagem no interior e câmaras para exterior, poderá obter um controlo visual do espaço em tempo real, presencialmente, 
+                        ou através de ligação remota, utilizando a Internet de forma segura e eficaz.
+                    </p>
+                    <p>
+                        A utilização de gravadores de imagem digitais permite a visualização de imagens em diferido, para análise de eventos ou confirmação de suspeitas.
+                    </p>
+                    <hr id="acessos">
+                </li>
+
+                <li>
+                    <h2>Controlo de Acessos</h2>
+                    <p>
+                        A Companhia Sintrense apresenta um leque variado de sistemas de controlo de acessos. Desde o mais simples sistema de código numérico, 
+                        até aos mais avançados sistemas de controlo biométrico, por leitura de impressão digital e/ou leitura da íris, passando pelos cartões electrónicos 
+                        e etiquetas de rádio frequência.
+                    </p>
+                    <p>
+                        Estas soluções podem ainda ser integradas com sistemas de controlo de assiduidade, gestão de hotelaria, controlo de serviços, etc...
+                    </p>
+                    <hr id="anti-roubo">
+                </li>
+
+                <li>
+                    <h2>Anti-roubo</h2>
+                    <p>
+                        Destinando-se principalmente á montagem em locais comerciais, os sistemas anti-roubo Companhia Sintrense são compostos por pórticos detectores de etiquetas, 
+                        podendo estas ser do tipo de pregar ou autocolantes.
+                    </p>
+                    <p>
+                        Os pórticos têm o sistema de sinalização incorporado, sendo acompanhados dos acessórios de desmagnetização de etiquetas e de remoção de pregos.
+                    </p>
+                    <hr id="extinçao">
+                </li>
+
+                <li>
+                    <h2>Extinção de Incêndios</h2>
+                    <p>
+                        Quando presentes, os sistemas manuais de extinção de incêndios permitem anular uma elevada percentagem de fogos. Este facto deve-se á possibilidade 
+                        de uma resposta rápida, sendo o incêndio combatido quando ainda não tomou proporções maiores.
+                    </p>
+                    <p>
+                        A Companhia Sintrense comercializa sistemas de combate inicial a incêndios, como extintores e mantas apaga fogos, em conjunto com sinaléticas fotoluminescentes, 
+                        no seguimento das indicações regulamentares.
+                    </p>
+                    <p>
+                        Disponibilizamos também sistemas de extinção automática de incêndios, baseados em centrais ligadas ao sistema de detecção, accionando os equipamentos de extinção automaticamente em caso de fogo.
+                    </p>
+                </li>
+            </ul>
+        </section>
+
+
+            
+            
+        <section class="intro">
+            <p>
+                Conheça ainda as <a href="#">soluções</a> completas de segurança Companhia Sintrense, integrando dois ou mais dos sistemas acima descritos, 
+                traduzindo-se em elevados níveis de protecção com ganhos consideráveis em termos de custos de instalação e exploração.
+            </p>
+            <p>
+                Caso deseje saber informações mais pormenorizadas sobre os sistemas de segurança Companhia Sintrense, poderá utilizar o nosso formulário de <a href="contactos.html">contacto</a>.
+            </p>
+        </section>
+    
+
+        <!-- FOOTER -->
+
+        <footer>
+
+			<div class="inner_footer">
+				<div class="recrut">
+					<h2>Recrutamento</h2>
+					<a href="mailto:geral@companhiasintrense.pt" title="Contact me by mail">Envie-nos o seu C.V.</a>
+				</div>
+
+				<div class="links">
+					<h2>Links</h2>
+					<ul>
+						<li><a href="mapa-site.html">Mapa do Site</a></li>
+						<li><a href="soluções.html">Soluções</a></li>
+						<li><a href="produtos.html">Produtos</a></li>
+						<li><a href="empresa.html">Sobre Nós</a></li>
+						<li><a href="contactos.html">Contactos</a></li>
+					</ul>
+				</div>
+
+				<div id="contactos" class="contactos">
+					<ul>
+						<li >
+							<p>R. Humberto Delgado, 26 - G.7 <br>
+								Abrunheira <br>
+								2710-050 Sintra <br>
+								PORTUGAL
+								</p>
+						</li>
+					
+						<li>
+							<a href="tel:+351219156203" title="Contact me by phone">Tel.: +351 219 156 203</a>
+						</li>
+						
+						<li>
+							<a href="tel:+351219156129" title="Contact me by phone">Fax: +351 219 156 129</a>
+						</li>
+
+						<li>
+							<a href="mailto:geral@companhiasintrense.pt" title="Contact me by mail">geral@companhiasintrense.pt</a>
+						</li>
+					</ul>
+				</div>
+				
+			</div>
+
+			<p class="copy"> © 2008 Companhia Sintrense de Instalações, Lda <a href="http://www.companhiasintrense.pt/empresa/termosecondicoes.html" target="blank">Termos e Condições</a> </p>
+
+        </footer>
+        
+    </body>
+</html>

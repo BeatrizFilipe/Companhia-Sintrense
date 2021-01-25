@@ -1,0 +1,284 @@
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {  
+
+  * {
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+    border:0;
+    scroll-behavior: smooth;
+    font-family: 'Montserrat', sans-serif;
+  }
+
+
+  html, body {width: 100%;
+    height: 100%;
+    margin: 0;
+  }
+
+
+  body {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: #6185b7; 
+  }
+
+
+  a:-webkit-any-link{
+    text-decoration:none;
+  }
+
+
+
+
+  /* font / text */
+
+  h1{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 72px;
+  }
+
+  h2{
+    font-weight: bold;
+  }
+
+
+
+
+  /* header */
+
+  #bem-vindo{
+    z-index: 4;
+    height: 87vh;
+    box-sizing: inherit;
+  }
+
+  .header{
+    fill: white;
+    width: 55%;
+    margin: 0;
+    position: absolute;
+    top: 22%;
+    right: 8%;
+  }
+  
+
+
+
+  /* Scroll Up */
+
+  #myBtn{
+    position: fixed;
+    background-color: transparent;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    cursor: pointer;
+    border-radius: 10px;
+    height: 74px;
+    outline: none;
+  }
+
+  #myBtn:hover{
+    background-color: rgba(0, 0, 0, 0.2);
+  }
+
+  .myBtn.active{
+    pointer-events: auto;
+    opacity: 0%;
+    display: none;
+  }
+
+
+
+
+  /* Scroll down */
+
+  .down-button{
+    position: absolute;
+    margin-top: 40px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+  }
+
+
+
+
+  /* informações */
+
+  #informações{
+    padding: 150px 10%;
+    background-color: rgba(255, 255, 255, 80%);
+    padding-bottom: 200px;
+  }
+
+  .info-titulo{
+    font-size: 40px;
+    padding-bottom: 45px;
+    color: #707070;
+    font-weight: 700;
+  }
+
+  .info-texto{
+    padding: 15px 8%;
+    font-size: 18px;
+    text-indent: 35px;
+    color: #707070;
+    line-height: 1.6;
+  }
+
+  .info-texto a{
+    text-decoration: none;
+    color: #707070;
+    font-weight: BOLDER;
+  }
+
+  .csi-assinatura{
+    margin-top: 40px;
+    float: right;
+    width: 300px;
+    align-items: right;
+    color: #707070;
+    fill: #707070;
+  }
+
+  .csi-assinatura p{
+    padding-top: 20px;
+    text-align: right;
+  }
+
+
+
+
+  /* grelha */
+
+  #grelha ul{
+    display: grid;
+    grid-template-columns: repeat(auto-fit);
+    margin: 50px 30px;
+    align-items: center;
+    gap: 25px;
+  }
+
+  .box{
+    height: 100%;
+    padding: 7% 3% 3% 3%;
+    background-color: rgba(255, 255, 255, 80%);
+    border-radius: 40px;
+    color: #707070;
+    display: inline-block;
+  }
+
+  .box h2{
+    font-size: 30px;
+    text-align: right;
+    color: #597EAB;
+    line-height: 1.3;
+    padding-right: 2%;
+  }
+
+  .box p{
+    font-size: 18px;
+    text-indent: 50px;
+    color: #B8B8B8;
+    padding: 5% 20px 0 20px;
+    line-height: 1.6;
+  }
+
+  .box .segundo-p{
+    padding-top: 20px;
+  }
+
+  .box a{
+    text-decoration: none;
+    color: #B8B8B8;
+    font-weight: 600;
+  }
+
+  .box .seta_secções{
+    position: relative;
+    float: right;
+    place-content: bottom;
+    margin: 0;
+  }
+
+  .seta_secções{
+    padding: 20px 10px 5px 20px;
+
+  }
+
+
+
+
+  /* footer */
+
+  footer{
+    background-color: #343434;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.8;
+    padding: 50px 20px 10px 70px;
+  }
+
+  .inner_footer {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 3fr));
+  }
+
+  footer h2{
+    font-size: 20px;
+  }
+
+  footer a{
+    font-size: 14px;
+    text-decoration: none;
+    color: white;
+    font-weight: lighter;
+  }
+
+  footer a:hover{
+    text-decoration: underline;
+    color: #d4d4d4;
+    cursor: pointer;
+  }
+
+  .inner_footer div{
+    margin: 8px 0;
+  }
+
+  .contactos, .contactos a{
+    color: #B4B0B0;
+    line-height: 1.2;
+
+  }
+
+  .contactos ul li p{
+    margin-bottom: 20px;
+  }
+
+  .copy{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    text-align: center;
+    color: #707070;
+    width: 100%;
+    margin-top: 70px;
+  }
+
+  .copy a::before{
+    content: '';
+    width: 0;
+    position: relative;
+    border: 1px solid #707070;
+    margin: 7px;
+  }
+
+  .copy a{
+    font-size: 12px;
+    text-align: center;
+    color: #707070;
+  }
+} 

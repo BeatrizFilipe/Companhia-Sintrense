@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+	<head>
+
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="autor" content="Companhia Sintrense">
+		<meta name="description" content="Companhia Sintrense">
+		
+		<!-- CSS -->
+		<link rel="stylesheet" type="text/css" href="css/reset.css">
+		<link rel="stylesheet" type="text/css" href="css/navbar.css">
+		<link rel="stylesheet" type="text/css" href="css/estilos-desktop.css">
+		<link rel="stylesheet" type="text/css" href="css/estilos-tablet.css"> 
+        <link rel="stylesheet" type="text/css" href="css/estilos-mobile.css">
+        <link rel="stylesheet" type="text/css" href="css/sub-page.css"> <!-- SUB PAGE STYLES -->
+		
+
+		<!-- Java Script -->
+
+		<script
+		src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+		integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8="
+		crossorigin="anonymous"></script>
+		<script>
+		$(function() {
+		$(".toggle").on("click", function() {
+			if ($(".page").hasClass("active")) {
+				$(".page").removeClass("active");
+			} else {
+				$(".page").addClass("active");
+			}
+		});
+	});
+		</script>
+
+		
+		<!-- Fonts -->
+		<style>
+			@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+		</style>
+
+
+		<!-- Page title -->
+		<title>Companhia Sintrense® :: Projecto</title>
+
+
+		<!-- Favicon -->
+		<link rel="icon" type="imagens/png" href="IMG/favicon.png">
+		
+        
+        <!-- Background Image -->
+        <style>
+            body {
+              background-image: url('IMG/background.jpg');
+            }
+         </style>
+    </head>
+    
+
+	<body>        
+
+        <main>
+
+                <!-- navbar -->
+    
+            <nav>
+                <a href="index.html"><img src="IMG/logo.jpg" alt="Companhia Sintrense Logo" class="logo"></a>
+                <ul class="menu">
+                    <li><a href="soluções.html" class="page">Soluções</a></li>
+                    <li><a href="serviços.html" class="page">Serviços</a></li>
+                    <li><a href="produtos.html" class="page">Produtos</a></li>
+                    <li><a href="empresa.html" class="page">Empresa</a></li>
+                    <li class="search page">
+                        <input type="text" placeholder="Search...">
+                        <img src="IMG/lupa.svg" alt="Search" class="lupa">
+                    </li>
+                    <li class="toggle"><span class="bars"></span></li>
+                </ul>
+            </nav>
+
+                <!--Title-->
+
+            <div class="title">
+                <h2>Projecto</h2>
+            </div>
+        </main>
+
+
+        <!--Scroll UP-->
+
+		<button onclick="topFunction()" id="myBtn" class="myBtn"><img src="IMG/Grupo_27.svg" alt="Scroll Up"></button>
+
+		<script>
+			const myBtn = document.querySelector("#myBtn");
+
+			window.addEventListener("scroll", () => {
+				if (window.pageYOffset < 300) {
+					myBtn.classList.add("active");
+				} 
+				else {
+					myBtn.classList.remove("active");
+				}
+			})
+
+			myBtn.addEventListener("click", function (){
+				window.scrollTo(0, 0);
+			});
+
+		</script>
+
+
+        <!-- Conteudo -->
+
+        <section class="intro intro-proj">
+            <p>
+                Com o empenho dos técnicos do quadro, assim como com o apoio dos parceiros, 
+                a Companhia Sintrense disponibiliza aos seus clientes os serviços de execução de projectos para instalações técnicas especiais.
+            </p>
+            <p>
+                Destas especialidades fazem parte os seguintes projectos:
+            </p>
+            <ul>
+                <li>Projectos de Instalações Eléctricas de Baixa Tensão;</li>
+                <li>Projectos de Luminotécnia;</li>
+                <li>Projectos de Telecomunicações;</li>
+                <li>Projectos de Redes Informáticas e Redes Estruturadas;</li>
+                <li>Projectos de Energia de Recurso (UPS);</li>
+                <li>Projectos de Instalações de Comando e Sinalização;</li>
+                <li>Projectos de Segurança - Intrusão, Incêndio e Vigilância;</li>
+                <li>Projectos de Aquecimento, Ventilação e Ar Condicionado (AVAC);</li>
+                <li>Projectos de Sistemas Informáticos.</li>
+            </ul>
+            <p>
+                Adicionalmente, num futuro próximo, contamos disponibilizar os serviços de:
+            </p>
+            <ul>
+                <li>Projecto de Comportamento Térmico;</li>
+                <li>Projecto de Automação e Gestão Automática de Edifícios;</li>
+                <li>Projecto de Sistemas de Controlo Ambiental;</li>
+                <li>Projecto de Aproveitamento de Energias Alternativas;</li>
+                <li>Projecto de Equipamentos Térmicos de Energia de Socorro (Diesel).</li>
+            </ul>
+            <p>Estes projectos são executados nas diversas vertentes, nomeadamente Desenvolvimento, 
+                Licenciamento, Orçamentação e Execução, estando incluído nestes serviços o acompanhamento da implementação dos projectos em obra.
+            </p>
+            <p>
+                Os projectos são elaborados com base das necessidades e expectativas do Dono de Obra, 
+                sendo aplicadas as Legislações Vigentes e consideradas as diversas condicionantes aplicáveis, tais como as 
+                questões técnicas, económicas, sociais, etc...
+            </p>
+            <p>
+                Para obtenção de informações mais pormenorizadas sobre o serviço de projecto da Companhia Sintrense, poderá utilizar o nosso formulário de <a href="contactos.html">contacto</a>.
+            </p>
+        </section>
+    
+
+        <!-- FOOTER -->
+
+        <footer>
+
+			<div class="inner_footer">
+				<div class="recrut">
+					<h2>Recrutamento</h2>
+					<a href="mailto:geral@companhiasintrense.pt" title="Contact me by mail">Envie-nos o seu C.V.</a>
+				</div>
+
+				<div class="links">
+					<h2>Links</h2>
+					<ul>
+						<li><a href="mapa-site.html">Mapa do Site</a></li>
+						<li><a href="soluções.html">Soluções</a></li>
+						<li><a href="produtos.html">Produtos</a></li>
+						<li><a href="empresa.html">Sobre Nós</a></li>
+						<li><a href="contactos.html">Contactos</a></li>
+					</ul>
+				</div>
+
+				<div id="contactos" class="contactos">
+					<ul>
+						<li >
+							<p>R. Humberto Delgado, 26 - G.7 <br>
+								Abrunheira <br>
+								2710-050 Sintra <br>
+								PORTUGAL
+								</p>
+						</li>
+					
+						<li>
+							<a href="tel:+351219156203" title="Contact me by phone">Tel.: +351 219 156 203</a>
+						</li>
+						
+						<li>
+							<a href="tel:+351219156129" title="Contact me by phone">Fax: +351 219 156 129</a>
+						</li>
+
+						<li>
+							<a href="mailto:geral@companhiasintrense.pt" title="Contact me by mail">geral@companhiasintrense.pt</a>
+						</li>
+					</ul>
+				</div>
+				
+			</div>
+
+			<p class="copy"> © 2008 Companhia Sintrense de Instalações, Lda <a href="http://www.companhiasintrense.pt/empresa/termosecondicoes.html" target="blank">Termos e Condições</a> </p>
+
+        </footer>
+        
+    </body>
+</html>
